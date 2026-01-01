@@ -21,4 +21,6 @@ length = len(text.split(' '))
 
 print(f"Summary ({length} words):\n{text}")
 # %%
-print(f"Original Article ({len(article_text.split(' '))} words):\n{article_text}")
+
+with open("output.txt", "w", encoding="utf-8") as f:
+    f.write(f"Original Article ({len(article_text.split(' '))} words):\n{article_text}")
