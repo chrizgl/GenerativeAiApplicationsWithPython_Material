@@ -15,9 +15,10 @@ docs = loader.load()
 article_text = docs[0].page_content
 # %%
 result = summarizer(article_text[:2000], min_length=20, max_length=80, do_sample=False)
-result[0]['summary_text']
+text = result[0]['summary_text']
 # %% number of characters
-len(result[0]['summary_text'].split(' '))
+length = len(text.split(' '))
 
-
+print(f"Summary ({length} words):\n{text}")
 # %%
+print(f"Original Article ({len(article_text.split(' '))} words):\n{article_text}")
