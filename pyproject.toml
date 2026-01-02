@@ -30,7 +30,12 @@ dependencies = [
     "arxiv>=2.3.1",
     "pymupdf>=1.26.7",
     "torch>=2.5.1",
+    "torchaudio>=2.5.1",
+    "torchvision>=0.20.1",
+    "einops>=0.8.0",
+    "hf-xet>=1.2.0",
     "sentencepiece>=0.2.1",
+    "diffusers>=0.36.0",
 ]
 
 [tool.uv.sources]
