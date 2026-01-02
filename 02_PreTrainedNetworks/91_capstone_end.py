@@ -38,5 +38,10 @@ def process_feedback(feedback: List[str]) -> dict[str, List[str]]:
     return res
 
 #%% Test
-process_feedback(feedback)
+results = process_feedback(feedback)
+for feedbackText, sentimentRes, classRes in zip(results['feedback'], results['sentiment'], results['label']):
+    print(f"Feedback: {feedbackText}")
+    print(f"Sentiment: {sentimentRes}")
+    print(f"Classes: {classRes}")
+    print("\n")
 # %%
